@@ -10,6 +10,7 @@ void main() => runApp(FlutterNewsApp());
 class FlutterNewsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    precacheImage(AssetImage("assets/logo_header"), context);
     return MaterialApp(
       title: "Flutter News",
       initialRoute: "/",
