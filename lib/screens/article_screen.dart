@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_news2021/screens/components/appbar_components.dart';
+import 'package:flutter_news2021/screens/component/appbar_component.dart';
 
-import 'components/appbar_components.dart';
+import 'component/appbar_component.dart';
 
 class ArticleScreen extends StatelessWidget {
   @override
