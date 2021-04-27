@@ -7,7 +7,28 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarComponent.build(),
-      drawer: MenuComponent(), // need appbar
+      drawer: MenuComponent(), // this widget always need appbar
+      body: Padding(
+          padding: const EdgeInsets.only(
+            top: 25.0,
+            right: 10.0,
+            left: 10.0,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                child: Text("date"),
+              ),
+              Container(
+                child: Text("Titre"),
+              ),
+              Container(
+                child: Image.asset("assets/logo_header.png"),
+              ),
+            ],
+          )),
     );
   }
 }
